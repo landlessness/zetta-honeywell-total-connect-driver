@@ -1,7 +1,7 @@
 var Device = require('zetta-device');
 var util = require('util');
 
-var HoneywellTotalConnect = module.exports = function(soap, device) {
+var HoneywellTotalConnect = module.exports = function(soap, device, locationID) {
   Device.call(this);
   this._soap = soap;
   this.DeviceID = device.DeviceID;
@@ -16,6 +16,7 @@ var HoneywellTotalConnect = module.exports = function(soap, device) {
     }
   }
   
+  this.LocationID = locationID;
 };
 util.inherits(HoneywellTotalConnect, Device);
 
