@@ -8,10 +8,12 @@ var HoneywellTotalConnect = module.exports = function(soap, device) {
   this.DeviceName = device.DeviceName;
   this.DeviceSerialNumber = device.DeviceSerialNumber;
 
-  var flags = device.DeviceFlags.split(',');
-  for (i=0; i<flags.length; i++) {
-    var flagKeyValue = flags[i].split('=');
-    this[flagKeyValue[0]] = flagKeyValue[1];
+  if (device.DeviceFlags) {
+    var flags = device.DeviceFlags.split(',');
+    for (i=0; i<flags.length; i++) {
+      var flagKeyValue = flags[i].split('=');
+      this[flagKeyValue[0]] = flagKeyValue[1];
+    }
   }
   
 };
