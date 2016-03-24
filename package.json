@@ -1,0 +1,29 @@
+{
+  "name": "zetta-honeywell-total-connect-driver",
+  "version": "0.0.1",
+  "description": "A Zetta prototype driver for Honeywell Total Connect devices",
+  "main": "index.js",
+  "scripts": {
+  },
+  "license": "MIT",
+  "dependencies": {
+    "zetta-device": "~0.18.0"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/landlessness/zetta-honeywell-total-connect-driver.git"
+  },
+  "keywords": [
+    "zetta",
+    "honeywell",
+    "totalconnect",
+    "alarmnet",
+    "iot",
+    "security"
+  ]
+}
