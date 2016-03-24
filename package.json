@@ -1,6 +1,6 @@
 {
   "name": "zetta-honeywell-total-connect-driver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Zetta prototype driver for Honeywell Total Connect devices",
   "main": "index.js",
   "scripts": {
